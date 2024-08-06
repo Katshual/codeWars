@@ -1,0 +1,91 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2761
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 comment aborder le sujet des valeurs `null`, `undefined` et `NaN` en JavaScript lors d'un entretien technique :\
+\
+### Introduction\
+Bonjour, je vais vous parler des valeurs sp\'e9ciales en JavaScript : `null`, `undefined` et `NaN`. Ces valeurs sont fondamentales pour comprendre comment JavaScript g\'e8re les absences de valeurs, les valeurs non d\'e9finies et les r\'e9sultats de calculs math\'e9matiques non valides.\
+\
+### `null`\
+La valeur `null` est utilis\'e9e pour repr\'e9senter une absence intentionnelle de valeur. Elle est souvent utilis\'e9e pour initialiser des variables qui sont cens\'e9es contenir des objets ou des valeurs qui ne sont pas encore disponibles.\
+\
+#### Exemple d'utilisation de `null`\
+```javascript\
+let user = null; // La variable user est intentionnellement vide\
+\
+if (user === null) \{\
+    console.log("La variable user est null.");\
+\}\
+```\
+\
+### `undefined`\
+La valeur `undefined` est utilis\'e9e pour repr\'e9senter une variable qui a \'e9t\'e9 d\'e9clar\'e9e mais qui n'a pas encore \'e9t\'e9 assign\'e9e de valeur. Elle est \'e9galement la valeur par d\'e9faut des propri\'e9t\'e9s d'objet qui n'ont pas \'e9t\'e9 d\'e9finies.\
+\
+#### Exemple d'utilisation de `undefined`\
+```javascript\
+let name; // La variable name est d\'e9clar\'e9e mais non d\'e9finie\
+\
+console.log(name); // undefined\
+\
+if (name === undefined) \{\
+    console.log("La variable name est undefined.");\
+\}\
+```\
+\
+### `NaN`\
+La valeur `NaN` (Not-a-Number) est utilis\'e9e pour repr\'e9senter un r\'e9sultat de calcul math\'e9matique non valide. Elle est souvent le r\'e9sultat de calculs math\'e9matiques qui ne peuvent pas \'eatre repr\'e9sent\'e9s par un nombre r\'e9el.\
+\
+#### Exemple d'utilisation de `NaN`\
+```javascript\
+let result = Math.sqrt(-1); // La racine carr\'e9e d'un nombre n\'e9gatif est non valide\
+\
+console.log(result); // NaN\
+\
+if (isNaN(result)) \{\
+    console.log("Le r\'e9sultat est NaN.");\
+\}\
+```\
+\
+### Diff\'e9rences entre `null`, `undefined` et `NaN`\
+- **`null`** : Utilis\'e9 pour repr\'e9senter une absence intentionnelle de valeur.\
+- **`undefined`** : Utilis\'e9 pour repr\'e9senter une variable qui a \'e9t\'e9 d\'e9clar\'e9e mais qui n'a pas encore \'e9t\'e9 assign\'e9e de valeur.\
+- **`NaN`** : Utilis\'e9 pour repr\'e9senter un r\'e9sultat de calcul math\'e9matique non valide.\
+\
+### V\'e9rification des Valeurs\
+Pour v\'e9rifier si une variable est `null`, `undefined` ou `NaN`, vous pouvez utiliser des op\'e9rateurs de comparaison et des fonctions sp\'e9cifiques.\
+\
+#### V\'e9rification de `null`\
+```javascript\
+let value = null;\
+\
+if (value === null) \{\
+    console.log("La variable value est null.");\
+\}\
+```\
+\
+#### V\'e9rification de `undefined`\
+```javascript\
+let value;\
+\
+if (value === undefined) \{\
+    console.log("La variable value est undefined.");\
+\}\
+```\
+\
+#### V\'e9rification de `NaN`\
+```javascript\
+let value = NaN;\
+\
+if (isNaN(value)) \{\
+    console.log("La variable value est NaN.");\
+\}\
+```\
+\
+### Conclusion\
+En r\'e9sum\'e9, les valeurs `null`, `undefined` et `NaN` sont des concepts fondamentaux en JavaScript qui permettent de g\'e9rer les absences de valeurs, les valeurs non d\'e9finies et les r\'e9sultats de calculs math\'e9matiques non valides. En comprenant et en utilisant correctement ces valeurs, vous pouvez \'e9crire du code plus robuste et plus fiable.\
+\
+Merci de votre attention. Je suis \'e0 votre disposition pour r\'e9pondre \'e0 vos questions.}
